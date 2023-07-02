@@ -97,15 +97,46 @@ for(let turtles of ninjaTurtles){
 }
 
 
+
+
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+
+
+console.table(favMovies)
+console.log(favMovies[8])
+
+
+
+favMovies.sort()
+
+favMovies.pop()
+
+favMovies.push('Guardians of the Galaxy')
+
+favMovies.reverse()
+
+favMovies.shift()
+
+favMovies.unshift()
+
+
+const resultMovies = favMovies.filter( word => {
+    let fix=  word.toLowerCase()
+    return fix === 'django unchained'
+})
+function getFrom(){
+    let spot = favMovies.findIndex((moves) => moves === resultMovies.join() )
+    favMovies.splice(spot,1,"Avatar")
+}
+
+getFrom()
+console.table(favMovies)
+
+console.log(favMovies.slice(favMovies.length/2))
+
+console.table(favMovies.findIndex((moves) => moves === "Fast and Furious" ))
+
+
 console.log('==================================================================================')
-
-
-
-
-
-
-
-
-
-
-
