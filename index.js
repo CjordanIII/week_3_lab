@@ -78,6 +78,26 @@ console.table(dart)
 
 
 
+//=========yell at the Ninja turtles======
+
+
+// Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo).
+// Use a for of loop to call toUpperCase() on each of them and print out the result.
+// Haven't heard of for of loops?
+
+// As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own. You've got this!
+
+
+const ninjaTurtles = ["Donatello", 'Leonardo', 'Raphael', 'Michaelangelo']
+
+
+for(let turtles of ninjaTurtles){
+    let uppercase = turtles.toUpperCase()
+     console.log(uppercase)
+}
+
+
+console.log('==================================================================================')
 
 
 
