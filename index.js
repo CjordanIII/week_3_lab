@@ -98,7 +98,7 @@ for(let turtles of ninjaTurtles){
 
 
 
-
+// ======= Methods revisited ==============
 
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
@@ -139,4 +139,17 @@ console.log(favMovies.slice(favMovies.length/2))
 console.table(favMovies.findIndex((moves) => moves === "Fast and Furious" ))
 
 
-console.log('==================================================================================')
+
+
+
+// ================ Where's waldo======================
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",["Lucinda", "Jacc", "Neff", "Snoop"],["Petunia", ["Baked Goods", "Waldo"]]];
+
+
+console.table(whereIsWaldo)
+
+whereIsWaldo.splice(1,1,)// removes eggbert
+whereIsWaldo[1].splice(2,1,'No One')
+
+console.table(whereIsWaldo[2][1][1])
